@@ -1,0 +1,62 @@
+ol li {
+  background-color: yellow;
+}
+ol li:nth-child(even) {
+  color: green;
+}
+ol li:nth-child(odd) {
+    text-transform: uppercase;
+}
+h1, h3{
+    color: red;
+}
+h1 em, h3 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+li{
+    font-size: 20px;
+}
+li em{
+    font-weight: 700;
+}
+
+#linguagens li:nth-child(-n+3){
+  color: blue;
+}
+
+#aliados li a[href*="stackoverflow"]:hover {
+    color: orange;
+    font-weight: 700;
+    
+  }
+  
+  #aliados li a[href*="w3schools"]:hover  {
+    color: green;
+    font-weight: 700;
+  }
+  
+  #aliados li a[href*="mozilla"]:hover  {
+    color: black;
+    font-weight: 700;
+  }
+
+  #aliados li a[href*="devdocs"]:hover  {
+    color: yellow;
+    font-weight: 700;
+  }
+
+  #aliados li a[href*="trybe"]:hover  {
+    color: green;
+    font-weight: 700;
+  }
+  
+  
+  
+/* descobrir se tem como fazer isso de outra maneira que não seja manual
+ */
+
+
+.pink-bg {
+    background-color: pink;
+}

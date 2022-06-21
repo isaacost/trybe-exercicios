@@ -1,0 +1,12 @@
+p, h1 {
+    text-align: center;
+}
+ol:hover {
+    background-color: blueviolet;
+}
+li:active{
+    color: white;
+}
+ol, ul{
+    list-style: none;
+}
