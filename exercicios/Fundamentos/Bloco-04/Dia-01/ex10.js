@@ -5,7 +5,6 @@ let lucro = (venda - custoComImposto)*1000;
 
 if (custo < 0 || venda < 0) {
     console.log('ERRO!');
-    break;
 } else {
     console.log(lucro);
 }
