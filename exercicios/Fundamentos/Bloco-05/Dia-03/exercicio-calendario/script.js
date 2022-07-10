@@ -60,7 +60,7 @@ createHolidayButton('Feriados');
 //Questão 3
 function displayHolidays() {
     let getHolidayButton = document.querySelector('#btn-holiday');
-    let getHolidays = document.querySelectorAll('.holiday')
+    let getHolidays = document.querySelectorAll('.holiday');
     let backgroundColor = 'rgb(238,238,238)';
     let setNewColor = 'white';
 
