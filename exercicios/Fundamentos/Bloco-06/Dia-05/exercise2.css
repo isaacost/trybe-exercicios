@@ -5,3 +5,53 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+.container {
+    display: flex;
+}
+
+p {
+    padding: 20px;
+}
+
+/* Primeiro layout */
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightpink;
+        font-family: sans-serif;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+
+    p {
+        padding: 0 5px;
+        line-height: 1.5em;
+    }
+}
+
+/* Segundo layout */
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+    
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+/* Terceiro layout */
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: lightgreen;
+    }
+    
+    .container {
+        flex-wrap: nowrap;
+    }
+}
