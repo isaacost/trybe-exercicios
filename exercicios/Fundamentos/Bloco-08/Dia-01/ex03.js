@@ -1,5 +1,5 @@
 const gabarito = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
-const respostasDoEstudante = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'C'];
+const respostasDoEstudante = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'A'];
 
 const comparaRespostas = (gabarito, respostasDoEstudante) => {
     if (gabarito === respostasDoEstudante) {
