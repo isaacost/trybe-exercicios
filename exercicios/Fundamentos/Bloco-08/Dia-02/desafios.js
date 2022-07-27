@@ -10,10 +10,13 @@ const usuarios = [
     { nome: 'Maggie', sobreNome: 'Simpson', temCNH: false },
 ];
 
+const temCNH = (usuario) => {
+    // console.log(`${usuario.nome} ${usuario.sobreNome} tem carta de motorista? ${usuario.temCNH ? "Sim" : "Não"}`);
+}
 
-// Use o FIND para retornar o estado que tem a sigla RR (use mais siglas para validar seu código)
-// Use o forEach para fazer o LOG de todos os estados do array da seguinte forma:
-// Sigla: SP, Estado: São Paulo - Observação: em ordem alfabética por estado invertida
+usuarios.forEach(temCNH);
+
+
 // Ordene o array de estados
 const estados = [
     { AC: 'Acre' },
@@ -45,6 +48,28 @@ const estados = [
     { TO: 'Tocantins' },
 ];
 
+// Use o FIND para retornar o estado que tem a sigla RR (use mais siglas para validar seu código)
+const localiza = (array, sigla) => {
+    const estado = array.find((element) => {
+        return element[sigla];
+    })
+    return estado;
+}
+
+// console.log(localiza(estados, 'RR'));
+
+// Use o forEach para fazer o LOG de todos os estados do array da seguinte forma:
+// Sigla: SP, Estado: São Paulo - Observação: em ordem alfabética por estado invertida
+
+const ordena = () => {
+    const estadosNovo = estados.sort().reverse();
+    const estadosFiltrados = estadosNovo.forEach((element) => {
+        // console.log(`Sigla: ${Object.keys(element)} Estado: ${Object.values(element)}`);
+    })
+    return estadosFiltrados;
+}
+
+ordena();
 
 // Ordene o vetor de estudantes da maior para a menor média, lembrando que a média
 // pode ser calculada somando-se as notas de avalição, projeto e trabalho em grupo
@@ -59,3 +84,10 @@ const pessoasEstudantes = [
     { nome: 'Marlene', avaliacao: 7.5, projeto: 8, trabalhoGrupo: 7 },
 ];
 
+const calculaMedia = () => {
+    return pessoasEstudantes.map((element) => {
+        let media = (element.avaliacao + element.projeto + element.trabalhoGrupo) / 3;
+        return { 'nome': element.nome, 'media': media.toFixed(2) }
+    }).sort((a, b) => b.media - a.media);
+    }
+console.log(calculaMedia());

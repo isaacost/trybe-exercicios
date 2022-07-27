@@ -75,4 +75,10 @@ const pessoasEstudantes = [
     { nome: 'Marlene', avaliacao: 7.5, projeto: 8, trabalhoGrupo: 7 },
 ];
 
-pessoasEstudantes.forEach();
+
+pessoasEstudantes.forEach((element) => {
+    mediaFinal = (element.avaliacao + element.projeto + element.trabalhoGrupo) / 3;
+    if (mediaFinal >= 7) {
+        console.log(`nome: ${element.nome}, media: ${mediaFinal}`);
+    }
+});
